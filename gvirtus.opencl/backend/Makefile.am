@@ -14,6 +14,7 @@ OpenclHandler_FlushandFinish.cpp\
 OpenclHandler_Device.cpp\
 ../util/OpenclUtil.cpp\
 ../util/OpenclUtil.h
-libOpencl_backend_la_AMCXXFLAGS = -fPIC
+libOpencl_backend_la_AMCXXFLAGS = -fPIC -fpermissive
+libOpencl_backend_la_CXXFLAGS = -fPIC -fpermissive
 libOpencl_backend_la_LIBADD = $(OPENCL_LIB_FLAGS) -lrt -lOpenCL
 

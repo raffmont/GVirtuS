@@ -27,5 +27,5 @@ libgvirtus_frontend_include_HEADERS= \
 Frontend.h
 libgvirtus_frontend_la_LDFLAGS = -Wl,--whole-archive -Wl,../util/libutil.a -Wl,--no-whole-archive
 libgvirtus_frontend_la_LIBADD = -lrt
-libgvirtus_frontend_la_CXXFLAGS = -fPIC
+libgvirtus_frontend_la_CXXFLAGS = -fPIC -fpermissive
 

@@ -23,6 +23,7 @@
  *             Department of Applied Science
  */
 
+#include <GL/gl.h>
 #include "CudaRtHandler.h"
 
 #if defined(__arm__)
