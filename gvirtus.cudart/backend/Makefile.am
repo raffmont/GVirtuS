@@ -17,7 +17,8 @@ CudaRtHandler_thread.cpp\
 CudaRtHandler_version.cpp\
 CudaRtHandler_occupancy.cpp
 
-libcudart_backend_la_AMCXXFLAGS = -fPIC
+libcudart_backend_la_AMCXXFLAGS = -fPIC -fpermissive
+libcudart_backend_la_CXXFLAGS = -fPIC -fpermissive
 libcudart_backend_la_LDFLAGS = -Wl,--whole-archive -Wl,../util/libcudautil.a -Wl,--no-whole-archive
 libcudart_backend_la_LIBADD = $(CUDA_LIB_FLAGS) -lrt -lcudart -llog4cplus
 

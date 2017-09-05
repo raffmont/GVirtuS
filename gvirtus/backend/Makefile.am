@@ -12,6 +12,6 @@ gvirtus_backend_include_HEADERS= \
 Backend.h\
 Handler.h\
 Process.h
-gvirtus_backend_CXXFLAGS = -fPIC
+gvirtus_backend_CXXFLAGS = -fPIC -fpermissive
 gvirtus_backend_LDFLAGS = -Wl,--export-dynamic -Wl,--whole-archive -Wl,../util/libutil.a -Wl,--no-whole-archive
 gvirtus_backend_LDADD = -lrt -ldl
